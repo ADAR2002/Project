@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Project
+﻿namespace Project
 {
-    internal class Class1
+    public class Segment_tree
     {
+        public int get_max(int l,int r)
+        {
+            return 0;
+        }
+
     }
 }

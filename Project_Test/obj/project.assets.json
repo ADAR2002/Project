@@ -393,6 +393,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Project/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Project.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.dll": {}
+        }
       }
     }
   },
@@ -1058,6 +1068,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Project/1.0.0": {
+      "type": "project",
+      "path": "../Project/Project.csproj",
+      "msbuildProject": "../Project/Project.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1065,6 +1080,7 @@
       "MSTest.TestAdapter >= 3.0.4",
       "MSTest.TestFramework >= 3.0.4",
       "Microsoft.NET.Test.Sdk >= 17.6.0",
+      "Project >= 1.0.0",
       "coverlet.collector >= 6.0.0"
     ]
   },
@@ -1094,7 +1110,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ahmad\\Desktop\\Project\\Project\\Project.csproj": {
+              "projectPath": "C:\\Users\\ahmad\\Desktop\\Project\\Project\\Project.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
