@@ -12,7 +12,7 @@ namespace Project_Test
         {
             int n = 6;//size of List
             List<int> arr = new List<int>() {5,10,6,7,9,8};
-            Segment_tree segmentTree = new Segment_tree();
+            Segment_tree segmentTree = new Segment_tree(arr,n);
             Assert.AreEqual(segmentTree.get_max(1, 3), 10);
             Assert.AreEqual(segmentTree.get_max(2, 4), 9);
             Assert.AreEqual(segmentTree.get_max(0, 0),5);
@@ -22,7 +22,7 @@ namespace Project_Test
         {
             int n = 5;
             List<int> arr = new List<int>() { 5, 1, 0, 2, 7 };
-            Segment_tree segmentTree = new Segment_tree();
+            Segment_tree segmentTree = new Segment_tree(arr,n);
 
             Assert.AreEqual(segmentTree.get_max(0, 4), 7);
             Assert.AreEqual(segmentTree.get_max(2, 2), 0);
